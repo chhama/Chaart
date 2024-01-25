@@ -1,12 +1,12 @@
 body {
-  font-family: 'Calibri', sans-serif;
+  #font-family: 'Calibri', sans-serif;
   background: aliceblue;
   font-size: 25px;
   margin: 10px;
   padding: 10px;
 }
 h1{
-  font-family: 'Showcard Gothic', cursive;
+  #font-family: 'Showcard Gothic', cursive;
   font-size: 60px;
   text-align: center;
   #text-decoration: underline;
@@ -19,4 +19,8 @@ input[type="range"] {
 #chart {
   max-width: 650px;
   margin: 35px auto;
+}
+
+.tiny{
+  font-size: 15px;
 }

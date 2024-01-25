@@ -190,6 +190,7 @@ function appendToGraph(){
       gtcdata.push(parseFloat(document.getElementById('gcrange').value));
       var last = ppmdata[ppmdata.length - 1];
       newppm=last+parseFloat(document.getElementById('gcrange').value);
+      newppm=parseFloat(newppm.toFixed(2));
       ppmdata.push(newppm);
       console.log(cdata);
       console.log(ppmdata);
@@ -217,10 +218,13 @@ function advancefive(){
       s=parseFloat(document.getElementById('sensi').value);
       newgtc=parseFloat(document.getElementById('gcrange').value);
       newtemp=(cdata[cdata.length-1]+s*Math.log2((ppmdata[ppmdata.length-1]+newgtc)/ppmdata[ppmdata.length-1])).toFixed(2);
+      console.log(cdata);
+
       cdata.push(parseFloat(newtemp));
       gtcdata.push(parseFloat(document.getElementById('gcrange').value));
       var last = ppmdata[ppmdata.length - 1];
       newppm=last+parseFloat(document.getElementById('gcrange').value);
+      newppm=parseFloat(newppm.toFixed(2));
       ppmdata.push(newppm);
       console.log(cdata);
       console.log(ppmdata);
